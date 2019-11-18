@@ -4,10 +4,10 @@
 #
 
 """
-3.1 Create a string variable that is initialized to your entire name - 
+3.1 Create a string variable that is initialized to your entire name -
 first, middle, and last.
 """
-
+name = "Alex Forrester"
 
 
 """
@@ -23,7 +23,7 @@ first, middle, and last.
 
 
 """
-3.4 Using the slice and concatenation operators, print your name in the 
+3.4 Using the slice and concatenation operators, print your name in the
 form "Lastname, Firstname."
 """
 
@@ -36,17 +36,14 @@ form "Lastname, Firstname."
 
 
 """
-3.6 Assume you have two variables: `s='s'`, and `p='p'`. Using 
-concatenation and repetition, write an expression that produces the 
+3.6 Assume you have two variables: `s='s'`, and `p='p'`. Using
+concatenation and repetition, write an expression that produces the
 string 'mississippi'.
 """
 
 
 
 """
-3.7 Modify the prefix example in Session 3.5 to print all prefixes of 
+3.7 Modify the prefix example in Session 3.5 to print all prefixes of
 "Roy G Biv," including the entire string.
 """
-
-
-
