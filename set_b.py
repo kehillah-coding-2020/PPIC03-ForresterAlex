@@ -25,8 +25,9 @@ print(string.find('p'))
 3.11 Make the word 'python' centered and all capital letters in a string
 of length 20.
 """
-
-
+yarn = "python"
+yarnU = yarn.upper()
+print(yarnU.center(20))
 
 """
 3.12 What is the difference between `ord('A')` and `ord('a')`?
