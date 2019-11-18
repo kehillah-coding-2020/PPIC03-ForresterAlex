@@ -49,3 +49,6 @@ print("mi" + s*2 + "i" + s*2 + "i" + p*2 + "i")
 3.7 Modify the prefix example in Session 3.5 to print all prefixes of
 "Roy G Biv," including the entire string.
 """
+RGB = "Roy G Biv"
+for i in range(len(RGB)+1):
+    print(RGB[0:i])
