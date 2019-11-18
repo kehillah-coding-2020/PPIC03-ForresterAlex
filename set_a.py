@@ -19,7 +19,7 @@ print(name[0:4])
 """
 3.3 Using the slice operator, print your last name.
 """
-
+print(name[5:14])
 
 
 """
