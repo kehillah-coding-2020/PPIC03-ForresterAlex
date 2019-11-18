@@ -2,7 +2,6 @@
 #
 # pp. 91, 93
 #
-import sys
 """
 3.8 Using the count method, find the number of occurrences of the
 character 's' in the string 'mississippi'.
@@ -13,7 +12,7 @@ print(string.count("i"))
 """
 3.9 Replace all occurences of the substring 'iss' with 'ox'.
 """
-
+print(string.replace('iss','ox'))
 
 
 """
