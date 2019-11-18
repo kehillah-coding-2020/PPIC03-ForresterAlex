@@ -26,7 +26,7 @@ print(name[5:14])
 3.4 Using the slice and concatenation operators, print your name in the
 form "Lastname, Firstname."
 """
-
+print(name[5:14] + ", " + name[0:4])
 
 
 """
