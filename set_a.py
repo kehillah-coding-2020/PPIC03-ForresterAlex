@@ -13,7 +13,7 @@ name = "Alex Forrester"
 """
 3.2 Using the slice operator, print your first name.
 """
-
+print(name[0:4])
 
 
 """
