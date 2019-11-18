@@ -33,7 +33,7 @@ print(name[5:14] + ", " + name[0:4])
 3.5 Print the length of your first name.
 """
 
-
+print(len(name[0:4]))
 
 """
 3.6 Assume you have two variables: `s='s'`, and `p='p'`. Using
