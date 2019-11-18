@@ -18,7 +18,7 @@ print(string.replace('iss','ox'))
 """
 3.10 Find the index of the first occurrence of 'p' in 'mississippi'.
 """
-
+print(string.find('p'))
 
 
 """
