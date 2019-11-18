@@ -40,7 +40,9 @@ print(len(name[0:4]))
 concatenation and repetition, write an expression that produces the
 string 'mississippi'.
 """
-
+s = "s"
+p = "p"
+print("mi" + s*2 + "i" + s*2 + "i" + p*2 + "i")
 
 
 """
