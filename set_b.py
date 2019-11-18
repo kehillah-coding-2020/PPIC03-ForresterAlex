@@ -2,13 +2,13 @@
 #
 # pp. 91, 93
 #
-
+import sys
 """
-3.8 Using the count method, find the number of occurrences of the 
+3.8 Using the count method, find the number of occurrences of the
 character 's' in the string 'mississippi'.
 """
-
-
+string = 'mississippi'
+print(string.count("i"))
 
 """
 3.9 Replace all occurences of the substring 'iss' with 'ox'.
@@ -23,7 +23,7 @@ character 's' in the string 'mississippi'.
 
 
 """
-3.11 Make the word 'python' centered and all capital letters in a string 
+3.11 Make the word 'python' centered and all capital letters in a string
 of length 20.
 """
 
@@ -36,7 +36,7 @@ of length 20.
 
 
 """
-3.13 Write a function that takes a single character digit and returns its 
+3.13 Write a function that takes a single character digit and returns its
 integer value, using only the `ord()` function.
 """
 
@@ -55,9 +55,6 @@ integer value, using only the `ord()` function.
 
 
 """
-3.16 Write a function that takes an exam score from 0-100 and returns the 
+3.16 Write a function that takes an exam score from 0-100 and returns the
 corresponding letter grade.
 """
-
-
-
