@@ -42,9 +42,10 @@ the difference is due to the fact that 'A' and 'a' equal different numbers in AS
 3.13 Write a function that takes a single character digit and returns its
 integer value, using only the `ord()` function.
 """
+def intvalue(letter):
+    return(ord(letter))
 
-
-
+print(intvalue("A"))
 """
 3.14 Write the `letterToIndex` function using `ord` and `chr`.
 """
