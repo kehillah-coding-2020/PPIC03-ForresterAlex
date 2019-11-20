@@ -49,7 +49,9 @@ print(intvalue("A"))
 """
 3.14 Write the `letterToIndex` function using `ord` and `chr`.
 """
-
+def letterToIndex(letter):
+    return(ord(letter)-64)
+print(letterToIndex("A"))
 
 
 """
