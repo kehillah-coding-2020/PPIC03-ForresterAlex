@@ -32,8 +32,11 @@ print(yarnU.center(20))
 """
 3.12 What is the difference between `ord('A')` and `ord('a')`?
 """
-
-
+print(ord('A'))
+print(ord('a'))
+'''
+the difference is due to the fact that 'A' and 'a' equal different numbers in ASCII"
+'''
 
 """
 3.13 Write a function that takes a single character digit and returns its
