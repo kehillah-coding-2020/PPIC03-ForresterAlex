@@ -66,3 +66,10 @@ print(indexToLetter(1))
 3.16 Write a function that takes an exam score from 0-100 and returns the
 corresponding letter grade.
 """
+grades = "ABCDF"
+
+def letterGrade(grade):
+    letter = grade-50
+    letter = letter//10
+    grades.index(letter)
+print(letterGrade(53))
