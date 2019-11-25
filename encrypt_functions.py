@@ -27,3 +27,27 @@ def scramble2Encrypt(plainText):
         charCount = charCount + 1
     cipherText = evenChars + oddChars
     return(cipherText)
+
+def non_binary_trans_cipher_encrypt(string):
+    string_len = len(string)
+    third_len = len(string)//3
+    section_one = ''
+    section_two = ''
+    section_three = ''
+    output = ''
+    for i in range(third_len):
+        temp = i * 3
+        section_three = string[temp-2]
+        section_two = string[temp-1]
+        section_one = string[temp]
+        output = output + section_one + section_two + section_three
+    return(output)
+
+def non_binary_trans_cipher_decrypt(string):
+    string_len = len(string)
+    third_len = len(string)//3
+    output = ''
+    for i in range(third_len):
+        temp = i * 3
+        output = output + string[temp] + string[temp-1] + string[temp-2]
+    return(output)
