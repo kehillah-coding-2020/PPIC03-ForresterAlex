@@ -22,9 +22,13 @@ print(removeChar("hello", "l"))
 3.24 Modify the `removeChar` function so that it works for negative
 character indexes.
 """
+def removeChar(string, idx):
+    '''
+    takes input of string and index and returns string without index
+    '''
+    return string[:idx]
 
-
-
+print(removeChar("hello",-1))
 """
 3.25 Modify the `substitutionCipher` function to use the `genKeyFromPass`
 function.
