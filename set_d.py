@@ -7,11 +7,16 @@
 3.23 Write the `removeChar` function using *for* loops rather than slice
 operators.
 """
-def removeChar(string):
-    num_spaces = string.count(" ")
-    for i in range (num_spaces):
-        index_of_space = string.find(" ")
-
+def removeChar(string, char):
+    '''
+    takes input of string and charecter to remove from string
+    '''
+    new_string = ''
+    for i in string:
+        if i != char:
+            new_string = new_string + i
+    return new_string
+print(removeChar("hello", "l"))
 
 """
 3.24 Modify the `removeChar` function so that it works for negative
