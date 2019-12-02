@@ -41,6 +41,11 @@ message.
 """
 3.21 Write the `substitutionDecrypt` method.
 """
+key1 = "ouwckbjmpzyexavrltsfgdqihn "
+cipherTextTest = substitutionEncrypt("Finn wants to go to Dr Bennits office",key1)
+print(cipherTextTest)
+plainTextTest = substitutionDecrypt(cipherTextTest, key1)
+print(plainTextTest)
 
 
 

@@ -2,6 +2,9 @@
 alpha = "abcdefghijklmnopqrstuvwxyz "
 key1 = "ouwckbjmpzyexavrltsfgdqihn "
 def scramble2Decrypt(cipherText):
+    '''
+    takes cipherText as input, and returns plain text, basic 2 rail transposition cipher
+    '''
     halfLength = len(cipherText)//2
     oddChars = cipherText[:halfLength]
     evenChars = cipherText[halfLength:]
@@ -17,6 +20,9 @@ def scramble2Decrypt(cipherText):
     return(plainText)
 
 def scramble2Encrypt(plainText):
+    '''
+    book issued 2 rail transposition cipher
+    '''
     evenChars = ""
     oddChars = ""
     charCount = 0
@@ -30,6 +36,9 @@ def scramble2Encrypt(plainText):
     return(cipherText)
 
 def non_binary_trans_cipher_encrypt(string):
+    '''
+    define 3 rail transposition cipher encryption, takes string as input, returns encrypted text
+    '''
     string_len = len(string)
     third_len = len(string)//3
     section_one = ''
@@ -45,6 +54,9 @@ def non_binary_trans_cipher_encrypt(string):
     return(output)
 
 def non_binary_trans_cipher_decrypt(string):
+    '''
+    define 3 rail transposition cipher decryption, takes input of string, returns decrypted text
+    '''
     string_len = len(string)
     third_len = len(string)//3
     output = ''
@@ -54,6 +66,9 @@ def non_binary_trans_cipher_decrypt(string):
     return(output)
 
 def substitutionEncrypt(plainText, key):
+    '''
+    define substitution encryption function, take input of plain text, and a key, uses "alpha" variable for alphabet defined at the top of the file
+    '''
     plainText = plainText.lower()
     cipherText = ""
     for ch in plainText:
@@ -61,14 +76,14 @@ def substitutionEncrypt(plainText, key):
         cipherText = cipherText + key[idx]
     return cipherText
 
-cipherTextTest = substitutionEncrypt("Finn wants to go to Dr Bennits office",key1)
-print(cipherTextTest)
+
 def substitutionDecrypt(string, key):
+    '''
+    #define substitution decryption function, take input of encrypted text, and a key, uses "alpha" variable for alphabet
+    '''
     string = string.lower()
     plainText = ""
     for ch in string:
         idx = key.find(ch)
         plainText = plainText + alpha[idx]
     return plainText
-plainTextTest = substitutionDecrypt(cipherTextTest, key1)
-print(plainTextTest)
