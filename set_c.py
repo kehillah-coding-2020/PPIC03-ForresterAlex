@@ -27,7 +27,7 @@ print(stripSpaces("Tu madre es una persona"))
 Write a function to implement a three-rail fence cipher that takes
 every third character and puts it on one of the three rails.
 """
-print(non_binary_trans_cipher_encrypt("circle"))
+print(non_binary_trans_cipher_encrypt("Circle"))
 print(non_binary_trans_cipher_decrypt(non_binary_trans_cipher_encrypt('Circle')))
 
 """

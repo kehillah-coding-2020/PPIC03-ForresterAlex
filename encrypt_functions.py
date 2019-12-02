@@ -1,5 +1,6 @@
 #common functions for Encryption and Decryption
-
+alpha = "abcdefghijklmnopqrstuvwxyz "
+key1 = "ouwckbjmpzyexavrltsfgdqihn "
 def scramble2Decrypt(cipherText):
     halfLength = len(cipherText)//2
     oddChars = cipherText[:halfLength]
@@ -51,3 +52,23 @@ def non_binary_trans_cipher_decrypt(string):
         temp = i * 3
         output = output + string[temp] + string[temp-1] + string[temp-2]
     return(output)
+
+def substitutionEncrypt(plainText, key):
+    plainText = plainText.lower()
+    cipherText = ""
+    for ch in plainText:
+        idx = alpha.find(ch)
+        cipherText = cipherText + key[idx]
+    return cipherText
+
+cipherTextTest = substitutionEncrypt("Finn wants to go to Dr Bennits office",key1)
+print(cipherTextTest)
+def substitutionDecrypt(string, key):
+    string = string.lower()
+    plainText = ""
+    for ch in string:
+        idx = key.find(ch)
+        plainText = plainText + alpha[idx]
+    return plainText
+plainTextTest = substitutionDecrypt(cipherTextTest, key1)
+print(plainTextTest)
