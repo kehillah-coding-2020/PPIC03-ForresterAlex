@@ -48,8 +48,12 @@ plainTextTest = substitutionDecrypt(cipherTextTest, key1)
 print(plainTextTest)
 
 
-
 """
 3.22 Rewrite the `substitutionEncrypt` function, but remove all spaces
 from the plaintext message.
 """
+key1 = "ouwckbjmpzyexavrltsfgdqihn "
+cipherTextTest = substitutionEncryptNoSpaces("Finn wants to go to Dr Bennits office",key1)
+print(cipherTextTest)
+plainTextTest = substitutionDecrypt(cipherTextTest, key1)
+print(plainTextTest)

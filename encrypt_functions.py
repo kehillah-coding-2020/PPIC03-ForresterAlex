@@ -87,3 +87,15 @@ def substitutionDecrypt(string, key):
         idx = key.find(ch)
         plainText = plainText + alpha[idx]
     return plainText
+
+def substitutionEncryptNoSpaces(plainText, key):
+    '''
+    define substitution encryption function, take input of plain text, and a key, uses "alpha" variable for alphabet defined at the top of the file, removes spaces
+    '''
+    plainText = plainText.replace(" ", "")
+    plainText = plainText.lower()
+    cipherText = ""
+    for ch in plainText:
+        idx = alpha.find(ch)
+        cipherText = cipherText + key[idx]
+    return cipherText
