@@ -2,7 +2,7 @@
 #
 # pp. 108, 113
 #
-
+from encrypt_functions import *
 """
 3.23 Write the `removeChar` function using *for* loops rather than slice
 operators.
@@ -33,7 +33,7 @@ print(removeChar("hello",-1))
 3.25 Modify the `substitutionCipher` function to use the `genKeyFromPass`
 function.
 """
-
+print(substitutionEncryptPassword("finn really likes dr bennets office", "dr bennets office"))
 
 
 """

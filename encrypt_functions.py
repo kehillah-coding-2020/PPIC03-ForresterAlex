@@ -99,3 +99,49 @@ def substitutionEncryptNoSpaces(plainText, key):
         idx = alpha.find(ch)
         cipherText = cipherText + key[idx]
     return cipherText
+
+def removeDupes(string):
+    '''
+    textbook issued function, i'm not writing docstrings for this, sorry not happening
+    '''
+    newString = ""
+    for ch in string:
+        if ch not in newString:
+            newString = newString + ch
+    return newString
+
+def removeMatches(myString, removeString):
+    '''
+    textbook issued functions
+    '''
+    newString = ""
+    for ch in myString:
+        if ch not in removeString:
+            newString = newString + ch
+    return newString
+
+def genKeyFromPass(password):
+    '''
+    textbook issued function
+    '''
+    key = alpha
+    password = removeDupes(password)
+    lastChar = password[-1]
+    lastIdx = key.find(lastChar)
+    afterString = removeMatches(key[lastIdx+1:], password)
+    beforeString = removeMatches(key[:lastIdx], password)
+    key = password + afterString + beforeString
+    return key
+
+def substitutionEncryptPassword(plainText, password):
+    '''
+    define substitution encryption function, take input of plain text, and a key, uses "alpha" variable for alphabet defined at the top of the file
+    '''
+    key = genKeyFromPass(password)
+    plainText = plainText.lower()
+    cipherText = ""
+    for ch in plainText:
+        idx = alpha.find(ch)
+        cipherText = cipherText + key[idx]
+    print(password, key)
+    return cipherText
